@@ -1,8 +1,8 @@
-import express from "express";
-import cors from "cors";
+import express from 'express';
+import cors from 'cors';
 
-import routes from "./routes";
-import { errorHandler } from "./middlewares/errorHandler";
+import routes from './routes';
+import { errorHandler } from './middlewares/errorHandler';
 
 const app = express();
 
@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/api", routes);
+app.use('/api', routes);
 
 // Error handling middleware
 app.use(errorHandler);

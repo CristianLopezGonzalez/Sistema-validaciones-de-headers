@@ -1,5 +1,5 @@
-import { Response } from "express";
-import { ReasonPhrases, StatusCodes } from "http-status-codes";
+import { Response } from 'express';
+import { ReasonPhrases, StatusCodes } from 'http-status-codes';
 
 export class HttpResponse {
   OK(res: Response, data: unknown) {

@@ -12,25 +12,25 @@ export class AppError extends Error {
 }
 
 export class NotFoundError extends AppError {
-  constructor(message: string = "Resource not found") {
+  constructor(message: string = 'Resource not found') {
     super(message, 404);
   }
 }
 
 export class BadRequestError extends AppError {
-  constructor(message: string = "Bad request") {
+  constructor(message: string = 'Bad request') {
     super(message, 400);
   }
 }
 
 export class UnauthorizedError extends AppError {
-  constructor(message: string = "Unauthorized") {
+  constructor(message: string = 'Unauthorized') {
     super(message, 401);
   }
 }
 
 export class ForbiddenError extends AppError {
-  constructor(message: string = "Forbidden") {
+  constructor(message: string = 'Forbidden') {
     super(message, 403);
   }
 }

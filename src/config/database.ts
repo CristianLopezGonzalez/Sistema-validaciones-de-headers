@@ -10,9 +10,9 @@ const prisma = new PrismaClient({ adapter });
 export { prisma };
 */
 
-import { env } from "./env";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
-import { PrismaClient } from "../../generated/prisma/client";
+import { env } from './env';
+import { PrismaBetterSqlite3 } from '@prisma/adapter-better-sqlite3';
+import { PrismaClient } from '../../generated/prisma/client';
 
 const connectionString = `${env.DATABASE_URL}`;
 
