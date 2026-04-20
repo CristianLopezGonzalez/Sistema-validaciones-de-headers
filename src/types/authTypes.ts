@@ -1,8 +1,9 @@
-import { Role } from "../../generated/prisma/client";
+import { Role } from '../../generated/prisma/client';
 
 export interface JwtPayload {
   userId: string;
   email: string;
+  role: Role;
   iat?: number; // issued at
   exp?: number; // expiration
 }
@@ -13,12 +14,12 @@ export interface RefreshTokenPayload {
   exp?: number;
 }
 
-declare module "express-serve-static-core" {
-    interface Request {
-        user?: {
-            userId: string;
-            email: string;
-            role: Role;
-        }
-    }
+declare module 'express-serve-static-core' {
+  interface Request {
+    user?: {
+      userId: string;
+      email: string;
+      role: Role;
+    };
+  }
 }
