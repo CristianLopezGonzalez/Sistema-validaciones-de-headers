@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { HttpResponse } from '../middlewares/HttpResponse';
+import { HttpResponse } from '../middlewares/httpResponse';
 
 const http = new HttpResponse();
 
