@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import helmet from 'helmet';
 
 import routes from './routes';
 import authRoutes from './routes/auth';
@@ -10,6 +11,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(helmet());
 
 // Routes
 app.use('/api', routes);
