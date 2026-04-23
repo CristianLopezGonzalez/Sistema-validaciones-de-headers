@@ -10,12 +10,12 @@ const router = Router();
 router.use(authenticate);
 
 // Crear nuevo scan
-router.post('/',createScanValidator,validateRequest,scanController.createScan);
+router.post('/', createScanValidator, validateRequest, scanController.createScan);
 
 // Listar scans del usuario
-router.get('/',scanController.getScans);
+router.get('/', scanController.getScans);
 
 // Obtener scan específico
-router.get('/:id',scanController.getscanById);
+router.get('/:id', scanController.getscanById);
 
 export default router;
