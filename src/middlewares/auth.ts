@@ -4,7 +4,6 @@ import { UnauthorizedError } from '../utils/AppError';
 
 export const authenticate = async (req: Request, res: Response, next: NextFunction) => {
   try {
-  
     const authHeader = req.headers.authorization;
 
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
