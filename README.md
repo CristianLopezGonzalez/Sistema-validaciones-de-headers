@@ -1,8 +1,5 @@
 # Security Scanner SaaS
 
-## Descripción
-[Descripción breve]
-
 ## Requisitos
 - Node.js >= 18
 - PostgreSQL >= 14
